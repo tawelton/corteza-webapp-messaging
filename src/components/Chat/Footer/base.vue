@@ -31,7 +31,7 @@ export default {
     hideUpload: {
       type: Boolean,
       required: false,
-      default: false,
+      default: !!process.env.CORDOVA_PLATFORM,
     },
 
     focus: {
@@ -55,7 +55,7 @@ export default {
     hideEmojiButton: {
       type: Boolean,
       required: false,
-      default: false,
+      default: !!process.env.CORDOVA_PLATFORM,
     },
 
     showCameraSource: {

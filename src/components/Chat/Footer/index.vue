@@ -16,6 +16,11 @@
         ref="input"
         v-model="draft"
         class="message-input float-right"
+        :class="{
+          hideUpload,
+          showCameraSource,
+          showGallerySource,
+        }"
         :channel="channel"
         :focus="focus"
         :submit-on-enter="submitOnEnter"

@@ -28,6 +28,7 @@ $mobileInputWidth: 35px;
 
       ~ .send-button:disabled {
         pointer-events: none;
+        opacity: 0.7;
       }
 
       &:focus-within {
@@ -71,7 +72,7 @@ $mobileInputWidth: 35px;
   .upload-button {
     border-right: 1px solid $secondary;
   }
-  .emoji-button, .camera-button, .galery-button {
+  .emoji-button, .camera-button, .gallery-button {
     right: 0;
     font-size: 20px;
 
@@ -99,8 +100,14 @@ $mobileInputWidth: 35px;
         border-top: 1px solid transparent;
         padding-right: 60px;
 
-        &.hybrid {
+        &.hideUpload {
           width: 100%;
+          padding-right: 30px;
+        }
+        &.showCameraSource {
+          padding-right: 60px;
+        }
+        &.showGallerySource {
           padding-right: 90px;
         }
       }
@@ -117,7 +124,7 @@ $mobileInputWidth: 35px;
           }
         }
 
-        &.emoji-button, &.galery-button {
+        &.emoji-button, &.gallery-button {
           right: 30px;
         }
 

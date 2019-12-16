@@ -235,7 +235,7 @@ li {
 }
 
 .scrollable {
-  height: calc(100vh - 90px);
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
 }
